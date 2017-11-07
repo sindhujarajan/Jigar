@@ -1,0 +1,28 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Orders</title>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Home/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-xs-12 col-md-6">
+            @*TODO image for party orders*@
+            <img src="~/images/chicago.jpg" alt="Milkshakes" class="imageOrder">
+        </div>
+        <div class="col-xs-12 col-md-6">
+            @*TODO image for swiggy*@
+            <img src="~/images/chicago.jpg" alt="Milkshakes" class="imageOrder" >
+        </div>
+    </div>
+</body>
+</html>

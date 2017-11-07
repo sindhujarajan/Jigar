@@ -1,0 +1,77 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    @*<script src="https://maps.googleapis.com/maps/api/js?key=TODO&callback=myMap"></script>*@
+    @*<script type="text/javascript" src="~/Scripts/contact.js"></script>*@
+    <script>
+        function myMap() {
+            var position = { lat: 51.5, lng: -0.12 };
+            var mapOptions = {
+                center: new google.maps.LatLng(51.5, -0.12),
+                zoom: 10,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+            }
+            var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+            var marker = new google.maps.Marker({
+                position: position,
+                map: map
+            });
+        }
+    </script>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Home/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+
+</head>
+<body class="body-content">
+
+    @*TODO Include Google map*@
+
+    <div class="row">
+        <div class="col-xs-12 col-md-12">
+            <div id="jigarMap" class="jigarMap"></div>
+
+        </div>
+    </div>
+    <div class="row addressContent">
+        <div class="col-xs-12 col-md-6">
+            <strong>Address</strong><br />
+            <address>
+                @*TODO : Change Style and font color*@
+                Jigar Rose, <br />
+                OMR Food Street,<br />
+                Navalur, Chennai, 603103<br />
+                <br />
+                <strong>
+                    <abbr title="Phone">Mobile:</abbr>
+                    7550099438
+                </strong>
+            </address><br />
+        </div>
+        <div class="col-xs-12 col-md-6">
+            <address>
+                <strong>Customer Support:</strong>   <a href="mailto:jigarroseomr@gmail.com">jigarroseomr@gmail.com</a><br />
+            </address>
+
+            <address>
+                @*TODO : put fb page url here*@
+                <strong>Facebook:</strong>
+                <img src="~/images/fblike.jpg" alt="fb like" class="fblike" />
+                <a href="">Click here to like us in Facebook</a><br />
+            </address>
+
+            @*TODO : Change Style and font color and underline *@
+            <strong>Suggestions / Feedback: </strong> <br />
+            <p>We love to hear from you. Let us know what you think about us in the above email. We consider customer feedback seriously.</p>
+        </div>
+    </div>
+</body>
+</html>

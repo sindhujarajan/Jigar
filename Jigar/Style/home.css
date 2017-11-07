@@ -1,0 +1,18 @@
+﻿
+
+.logo{    
+    height: 150px;
+    width:250px;
+    margin:10px 20px 10px 10px;
+}
+.headerText{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size:84pt;
+    font-style:normal;
+    font-weight:bold;
+    color:indianred;
+
+}
+.rowHeader{
+    /*background-color:floralwhite;*/
+}

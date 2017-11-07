@@ -1,0 +1,79 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers</title>
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Scripts/career.js" type="text/javascript"></script>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Home/css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+
+</head>
+<body>
+    <div class="containerCareer">
+        <div class="row">
+            <div class="col-xs-2 col-md-2"></div>
+            <div class="col-xs-10 col-md-10">
+                <p><strong> Please enter your details and submit. We will reach out to you.</strong> </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4">
+                <label id="lblName">Name</label>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <input type="text" id="name" autofocus required placeholder="Enter your Name" />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4">
+                <label id="lblMobile">Mobile</label>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <input type="tel" id="mobile" required placeholder="Enter your Mobile number" />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4">
+                <label id="lblEmail">Email</label>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <input type="email" id="email" placeholder="Enter your email" />
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4">
+                <label id="lblExperience">Experience</label>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <textarea id="experience" placeholder="Enter your experience details" rows="5" cols="23" maxlength="200"></textarea>
+            </div>            
+        </div>
+
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-xs-12 col-md-4">
+                <button name="submit" id="btnSubmit" value="Submit" onclick="submitDetails();" class="btn btn-primary btn-default">Submit</button>
+            </div>
+            <div class="col-md-6"></div>
+        </div>
+    </div>
+</body>
+</html>

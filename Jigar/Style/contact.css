@@ -1,0 +1,25 @@
+﻿
+.fblike{
+    width:75px;
+}
+.body-content{
+    padding-top: 50px;
+    padding-bottom: 20px;    
+    padding-left:20px;
+    background-color:#f5f5f5;
+    display:flex;
+    max-width:1200PX;      
+    border:1px solid lightgray;    
+    margin:auto;
+}
+
+.jigarMap{
+    width:900px;
+    height:400px;
+}
+
+.addressContent{
+     padding-top: 10px;
+    padding-bottom: 20px;    
+    padding-left:80px;
+}

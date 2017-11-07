@@ -1,0 +1,39 @@
+﻿.menuContainer {
+    width: 900px;
+}
+.menuContainer h4{
+    margin-left:40px;
+}
+
+.menuListHeader{
+color:darkgrey;
+text-decoration-color:black;
+text-decoration-line:underline;
+font-style:italic;
+}
+
+.headerText{
+    font-family : Verdana;
+    font-size : 36pt;
+    font-weight : bold;
+    color: indianred;
+    margin-left : 50px;    
+}
+
+.catalogItem{
+    border : 1px solid lightgrey;
+    margin : 10px 10px 10px 10px;      
+}
+
+.catalogImg{
+    width:240px;
+    height:250px;  
+    padding : 10px 10px 10px 10px;
+}
+
+.description{
+    font-family:Calibri;
+    font-size:small;
+    color:black;
+    margin: 5px 10px 5px 20px;
+    }
